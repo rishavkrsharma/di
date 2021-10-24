@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.logo {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.navbar ul {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li {
+  margin: 0px 30px;
+  list-style: none; /* to remove bullets */
+  display: inline-block;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+p {
+  color: #555;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0px;
+}
+
+.col-2 h1 {
+  padding: 15px 0px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff523b;
+  padding: 8px 30px;
+  margin: 30px 0px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: #563434;
+}
+
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.header .row {
+  margin-top: 70px;
+}
+
+.categories {
+  margin: 70px 0;
+}
+
+.col-3 {
+  flex-basis: 25%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0px 25px;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 50px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+.col-4:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.small-container h2 {
+  text-align: center;
+  margin: 60px 0px;
+}
+
+.rating .fa {
+  color: #ff523b;
+}
+
+.title {
+  text-align: center;
+  margin: 60px 0px;
+}
+
+/* account page */
+
+.account-page {
+  padding: 50px 0px;
+  background: radial-gradient(#fff, #79d8d3);
+}
+
+.form-container {
+  background: rgb(255, 255, 255);
+  border-radius: 1em;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0px;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.form-btn {
+  display: inline-block;
+}
+
+.form-container form {
+  max-width: 300px;
+  padding: 0 15px;
+  position: absolute;
+  top: 100px;
+  transition: transform 1s;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border-radius: 1em;
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  width: 100%;
+  border: none;
+  color: aqua;
+  cursor: pointer;
+  margin: 25px 0 10px 0;
+}
+
+form .btn:focus {
+  outline: none;
+}
+
+#LoginForm {
+  left: -300px;
+}
+
+#RegForm {
+  left: 0;
+}
+
+form a {
+  font-size: 12px;
+  text-decoration: none;
+  color: gray;
+}
+
+#Indicator {
+  width: 100px;
+  border: none;
+  background: #ff523b83;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+
+  transition: transform 1s;
+}
+
+/* Media query For menu */
+
+@media only screen and (max-width: 800px) {
+  #navlist {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    overflow: hidden;
+  }
+  #navlist li {
+    padding: 5px 0px;
+  }
+  #navlist a {
+    color: white;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #navlist a:hover {
+    color: red;
+  }
+
+  .menu-icon {
+    position: relative;
+    right: 10px;
+  }
+
+  .cart-info p {
+    display: none;
+  }
+}
